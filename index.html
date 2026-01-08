@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BinSight</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f4f6f8;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    /* HEADER */
+    .header {
+      height: 100vh;
+      background: linear-gradient(to right, #1e3c72, #2a5298);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: clamp(36px, 6vw, 64px);
+      font-weight: bold;
+      text-align: center;
+    }
+
+    /* CONTENT */
+    .content {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #1e3c72;
+      margin-top: 60px;
+    }
+
+    .check {
+      margin-left: 20px;
+    }
+
+    /* IMAGE */
+    .binsight-image {
+      width: 100%;
+      max-width: 400px;
+      display: block;
+      margin: 50px auto;
+      border-radius: 14px;
+      box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+
+      /* Animation */
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeUp 1.2s ease forwards;
+      animation-delay: 0.4s;
+    }
+
+    .image-caption {
+      text-align: center;
+      font-style: italic;
+      color: #555;
+      margin-top: -20px;
+    }
+
+    /* ANIMATION KEYFRAMES */
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- TOP TITLE -->
+  <div class="header">
+    BinSight
+  </div>
+
+  <!-- CONTENT -->
+  <div class="content">
+
+    <h2>🔹 What is BinSight?</h2>
+    <p>
+      BinSight is a smart waste-management system designed to reduce food waste using automation and real-time monitoring.
+      It uses sensors, RFID technology, and microcontrollers to identify users, monitor waste levels, and take actions automatically.
+    </p>
+
+    <!-- IMAGE -->
+    <img src="binsight_dustbin.jpg" alt="BinSight Smart Dustbin" class="binsight-image">
+    <p class="image-caption">BinSight – Smart Automated Waste Management Dustbin</p>
+
+    <h2>🔹 How does BinSight work?</h2>
+    <p>
+      When a user scans their RFID card, BinSight verifies the user and opens the dustbin lid automatically.
+      After waste is thrown, ultrasonic sensors check whether the waste exceeds the allowed limit.
+      If excess waste is detected, the system alerts through a buzzer and sends a notification to parents or authorities.
+      If the waste is within limits, it is safely disposed into the correct container.
+    </p>
+
+    <h2>🔹 Advantages of BinSight</h2>
+    <p class="check">✅ Reduces food wastage effectively</p>
+    <p class="check">✅ Promotes responsible eating habits</p>
+    <p class="check">✅ Fully automatic and user-friendly</p>
+    <p class="check">✅ Provides real-time alerts and monitoring</p>
+    <p class="check">✅ Suitable for schools, hostels, and messes</p>
+
+    <h2>🔹 Why is BinSight Made?</h2>
+    <p>
+      In schools and hostels, children waste a lot of food.
+      To overcome this problem, we have made BinSight — a smart automated dustbin
+      which tracks food wastage and alerts when limits are crossed.
+    </p>
+
+  </div>
+
+</body>
+</html>

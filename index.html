@@ -44,14 +44,21 @@
     }
 
     /* IMAGE */
-    .binsight-image {
-      width: auto;       /* let max-width control sizing */
-      max-width: 400px;  /* constrain image */
-      height: auto;      /* maintain aspect ratio */
-      display: block;
-      margin: 50px auto;
-      border-radius: 14px;
-      box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+   .binsight-image {
+  width: 280px;        /* ← smaller image */
+  max-width: 100%;     /* ← still responsive */
+  height: auto;
+
+  display: block;
+  margin: 40px auto;
+  border-radius: 14px;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 1.2s ease forwards;
+  animation-delay: 0.4s;
+}
 
       /* Animation */
       opacity: 0;

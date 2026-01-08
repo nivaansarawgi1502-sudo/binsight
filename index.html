@@ -2,12 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BinSight</title>
-
   <style>
     body {
-   
-        margin: 0;
+      margin: 0;
       font-family: Arial, Helvetica, sans-serif;
       background-color: #f4f6f8;
       color: #222;
@@ -55,7 +54,7 @@
       box-shadow: 0 12px 25px rgba(0,0,0,0.25);
 
       /* Animation */
-      opacity: 1;
+      opacity: 0;
       transform: translateY(30px);
       animation: fadeUp 1.2s ease forwards;
       animation-delay: 0.4s;
@@ -73,6 +72,12 @@
       to {
         opacity: 1;
         transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .header {
+        font-size: clamp(28px, 8vw, 48px);
       }
     }
   </style>
@@ -95,8 +100,8 @@
     </p>
 
     <!-- IMAGE -->
-    <img src="image.jpeg" alt="Binsight Smart Dustbin">
-
+    <img src="image.jpeg" alt="Binsight Smart Dustbin" class="binsight-image">
+    <p class="image-caption">Smart automated dustbin in action</p>
 
     <h2>🔹 How does BinSight work?</h2>
     <p>
@@ -108,7 +113,7 @@
 
     <h2>🔹 Advantages of BinSight</h2>
     <p class="check">1. Reduces food wastage effectively</p>
-    <p class="check">2.Promotes responsible eating habits</p>
+    <p class="check">2. Promotes responsible eating habits</p>
     <p class="check">3. Fully automatic and user-friendly</p>
     <p class="check">4. Provides real-time alerts and monitoring</p>
     <p class="check">5. Suitable for schools, hostels, and messes</p>

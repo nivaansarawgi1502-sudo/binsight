@@ -31,6 +31,7 @@
     .content {
       padding: 40px 20px;
       max-width: 900px;
+      width: 100%; /* fix Safari sizing */
       margin: auto;
     }
 
@@ -45,8 +46,9 @@
 
     /* IMAGE */
     .binsight-image {
-      width: 100%;
-      max-width: 400px;
+      width: auto;       /* let max-width control sizing */
+      max-width: 400px;  /* constrain image */
+      height: auto;      /* maintain aspect ratio */
       display: block;
       margin: 50px auto;
       border-radius: 14px;
